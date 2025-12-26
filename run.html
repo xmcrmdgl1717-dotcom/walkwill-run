@@ -1,12 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "urhaphy590");
-</script>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Walkwill Tech | Earn Money With Your Steps</title>
@@ -72,6 +66,14 @@
             text-shadow: 0 0 10px rgba(241, 196, 15, 0.3);
             position: relative;
             padding: 0 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .highlight-age:hover {
+            transform: scale(1.05);
+            text-shadow: 0 0 15px rgba(241, 196, 15, 0.5);
         }
 
         .highlight-age::after {
@@ -83,6 +85,11 @@
             height: 3px;
             background-color: #f1c40f;
             border-radius: 2px;
+            transition: height 0.3s ease;
+        }
+
+        .highlight-age:hover::after {
+            height: 5px;
         }
 
         .highlight-kes {
@@ -94,6 +101,12 @@
             padding: 0 5px;
             position: relative;
             display: inline-block;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .highlight-kes:hover {
+            transform: scale(1.05);
         }
 
         .highlight-kes::before {
@@ -107,6 +120,22 @@
             border-radius: 8px;
             z-index: -1;
             opacity: 0.2;
+            transition: opacity 0.3s ease;
+        }
+
+        .highlight-kes:hover::before {
+            opacity: 0.4;
+        }
+
+        /* 添加点击动画效果 */
+        @keyframes clickEffect {
+            0% { transform: scale(1); }
+            50% { transform: scale(0.95); }
+            100% { transform: scale(1); }
+        }
+
+        .click-animation {
+            animation: clickEffect 0.3s ease;
         }
 
         .hero p strong {
@@ -613,7 +642,7 @@
                 <i class="fas fa-walking"></i> #1 Step Rewards App in Kenya
             </div>
             <h1>Earn Money With Your Steps!</h1>
-            <p>Hi! Welcome to Walkwill Tech! An Invitation to Pragmatic Individuals <span class="highlight-age">Aged 30+</span>. Earn <span class="highlight-kes">1000-10000 KES</span> daily through walking and commuting. Want to try it now?</p>
+            <p>Hi! Welcome to Walkwill Tech! An Invitation to Pragmatic Individuals <span class="highlight-age" id="ageTextBtn">Aged 30+</span>. Earn <span class="highlight-kes" id="kesTextBtn">1000-10000 KES</span> daily through walking and commuting. Want to try it now?</p>
             
             <div class="steps">
                 <div class="step">
@@ -758,15 +787,35 @@
         const ageModal = document.getElementById('ageModal');
         const age30Btn = document.getElementById('age30Btn');
         const ageUnder30Btn = document.getElementById('ageUnder30Btn');
+        const ageTextBtn = document.getElementById('ageTextBtn');
+        const kesTextBtn = document.getElementById('kesTextBtn');
         
         // 打开弹窗函数
         function openAgeModal() {
             ageModal.style.display = 'flex';
         }
         
-        // 打开弹窗（两个按钮都使用同一个函数）
+        // 打开弹窗（所有按钮和文本都使用同一个函数）
         openModalBtn.addEventListener('click', openAgeModal);
         joinModalBtn.addEventListener('click', openAgeModal);
+        ageTextBtn.addEventListener('click', openAgeModal);
+        kesTextBtn.addEventListener('click', openAgeModal);
+        
+        // 为文本添加点击动画效果
+        function addClickAnimation(element) {
+            element.classList.add('click-animation');
+            setTimeout(() => {
+                element.classList.remove('click-animation');
+            }, 300);
+        }
+        
+        ageTextBtn.addEventListener('click', function() {
+            addClickAnimation(this);
+        });
+        
+        kesTextBtn.addEventListener('click', function() {
+            addClickAnimation(this);
+        });
         
         // 关闭弹窗
         closeModalBtn.addEventListener('click', function() {
@@ -784,7 +833,7 @@
         age30Btn.addEventListener('click', function() {
             // 50%概率跳转到百度，50%概率跳转到谷歌
             const websites = [
-                'https://api.whatsapp.com/send?phone=19708404196',
+              'https://api.whatsapp.com/send?phone=19708404196',
                 'https://api.whatsapp.com/send?phone=17609913273'
             ];
             
@@ -807,4 +856,4 @@
     </script>
 </body>
 </html>
-
+      
