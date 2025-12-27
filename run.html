@@ -443,6 +443,275 @@ src="https://www.facebook.com/tr?id=1604671177641471&ev=PageView&noscript=1"
             transform: scale(1.2); 
         } 
 
+        /* 新增：健康导师部分样式 */ 
+        .mentor-section { 
+            background-color: rgba(255, 255, 255, 0.95); 
+            border-radius: 20px; 
+            padding: 40px; 
+            margin: 40px 0; 
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1); 
+            border: 2px solid rgba(206, 17, 38, 0.3); 
+        } 
+
+        .mentor-header { 
+            text-align: center; 
+            margin-bottom: 40px; 
+            position: relative; 
+            padding-bottom: 20px; 
+        } 
+
+        .mentor-header:after { 
+            content: ''; 
+            position: absolute; 
+            bottom: 0; 
+            left: 50%; 
+            transform: translateX(-50%); 
+            width: 100px; 
+            height: 4px; 
+            background: linear-gradient(90deg, #000000, #CE1126, #006600); 
+            border-radius: 2px; 
+        } 
+
+        .greeting { 
+            font-size: 1.8rem; 
+            color: #000000; 
+            font-weight: 700; 
+            margin-bottom: 10px; 
+        } 
+
+        .greeting .emoji { 
+            font-size: 2rem; 
+        } 
+
+        .welcome { 
+            font-size: 1.4rem; 
+            color: #CE1126; 
+            font-weight: 600; 
+        } 
+
+        .mentor-content { 
+            margin-bottom: 30px; 
+        } 
+
+        .mentor-content p { 
+            font-size: 1.1rem; 
+            line-height: 1.8; 
+            margin-bottom: 15px; 
+            color: #444444; 
+        } 
+
+        .mentor-highlight { 
+            color: #CE1126; 
+            font-weight: 700; 
+            background-color: rgba(206, 17, 38, 0.1); 
+            padding: 2px 6px; 
+            border-radius: 4px; 
+        } 
+
+        .earnings-title { 
+            text-align: center; 
+            font-size: 1.8rem; 
+            color: #000000; 
+            margin: 30px 0 20px; 
+            font-weight: 700; 
+        } 
+
+        .earnings-box { 
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.05), rgba(206, 17, 38, 0.05)); 
+            border-radius: 15px; 
+            padding: 30px; 
+            text-align: center; 
+            margin: 30px auto; 
+            max-width: 600px; 
+            border: 2px solid rgba(206, 17, 38, 0.2); 
+        } 
+
+        .earnings-box div:first-child { 
+            font-size: 1.2rem; 
+            color: #555555; 
+            margin-bottom: 10px; 
+        } 
+
+        .earnings-amount { 
+            font-size: 2.5rem; 
+            font-weight: 800; 
+            color: #CE1126; 
+            margin: 10px 0; 
+            text-shadow: 0 0 10px rgba(206, 17, 38, 0.2); 
+        } 
+
+        .earnings-note { 
+            font-size: 1rem; 
+            color: #666666; 
+            font-style: italic; 
+        } 
+
+        .benefits { 
+            display: flex; 
+            justify-content: center; 
+            flex-wrap: wrap; 
+            gap: 30px; 
+            margin: 40px 0; 
+        } 
+
+        .benefit { 
+            text-align: center; 
+            flex: 1; 
+            min-width: 200px; 
+            max-width: 250px; 
+        } 
+
+        .benefit-icon { 
+            font-size: 3rem; 
+            margin-bottom: 15px; 
+        } 
+
+        .benefit-text { 
+            font-size: 1.2rem; 
+            font-weight: 600; 
+            color: #000000; 
+        } 
+
+        .mentor-subtitle { 
+            font-size: 1.5rem; 
+            color: #000000; 
+            margin: 30px 0 15px; 
+            font-weight: 700; 
+            text-align: center; 
+            position: relative; 
+            padding-bottom: 10px; 
+        } 
+
+        .mentor-subtitle:after { 
+            content: ''; 
+            position: absolute; 
+            bottom: 0; 
+            left: 50%; 
+            transform: translateX(-50%); 
+            width: 60px; 
+            height: 3px; 
+            background: linear-gradient(90deg, #000000, #CE1126); 
+            border-radius: 2px; 
+        } 
+
+        .requirements { 
+            background-color: rgba(0, 102, 0, 0.05); 
+            border-radius: 15px; 
+            padding: 25px; 
+            margin: 30px auto; 
+            max-width: 500px; 
+            border: 2px solid rgba(0, 102, 0, 0.2); 
+        } 
+
+        .requirement-item { 
+            display: flex; 
+            align-items: center; 
+            margin-bottom: 12px; 
+            font-size: 1.1rem; 
+        } 
+
+        .requirement-item:last-child { 
+            margin-bottom: 0; 
+        } 
+
+        .checkmark { 
+            color: #006600; 
+            font-weight: bold; 
+            font-size: 1.3rem; 
+            margin-right: 15px; 
+        } 
+
+        .mentor-steps { 
+            display: flex; 
+            flex-direction: column; 
+            gap: 20px; 
+            margin: 30px 0; 
+            max-width: 800px; 
+            margin-left: auto; 
+            margin-right: auto; 
+        } 
+
+        .mentor-step { 
+            display: flex; 
+            align-items: flex-start; 
+            background-color: rgba(255, 255, 255, 0.7); 
+            border-radius: 15px; 
+            padding: 20px; 
+            border: 1px solid rgba(206, 17, 38, 0.2); 
+        } 
+
+        .mentor-step-number { 
+            background: linear-gradient(135deg, #000000, #CE1126); 
+            color: white; 
+            width: 40px; 
+            height: 40px; 
+            border-radius: 50%; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            font-weight: bold; 
+            font-size: 1.2rem; 
+            margin-right: 20px; 
+            flex-shrink: 0; 
+        } 
+
+        .mentor-step-content { 
+            flex: 1; 
+            padding-top: 5px; 
+        } 
+
+        .mentor-note { 
+            text-align: center; 
+            font-style: italic; 
+            color: #7f8c8d; 
+            margin-top: 30px; 
+            font-size: 1rem; 
+            max-width: 800px; 
+            margin-left: auto; 
+            margin-right: auto; 
+        } 
+
+        .mentor-button { 
+            display: block; 
+            background: linear-gradient(135deg, #CE1126, #000000); 
+            color: white; 
+            padding: 18px 50px; 
+            border-radius: 50px; 
+            text-decoration: none; 
+            font-weight: bold; 
+            font-size: 1.2rem; 
+            margin: 40px auto 20px; 
+            transition: all 0.3s ease; 
+            box-shadow: 0 4px 15px rgba(206, 17, 38, 0.4); 
+            cursor: pointer; 
+            border: none; 
+            position: relative; 
+            overflow: hidden; 
+            text-align: center; 
+            max-width: 300px; 
+        } 
+
+        .mentor-button:hover { 
+            background: linear-gradient(135deg, #000000, #CE1126); 
+            transform: translateY(-3px); 
+            box-shadow: 0 6px 25px rgba(206, 17, 38, 0.6); 
+        } 
+
+        .mentor-button::after { 
+            content: ''; 
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%; 
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent); 
+            transform: translateX(-100%); 
+        } 
+
+        .mentor-button:hover::after { 
+            animation: shine 1s ease; 
+        } 
+
         /* 新增：Join Now按钮容器样式 */ 
         .join-section { 
             text-align: center; 
@@ -959,6 +1228,32 @@ src="https://www.facebook.com/tr?id=1604671177641471&ev=PageView&noscript=1"
                 font-size: 0.9rem; 
             } 
 
+            .greeting { 
+                font-size: 1.5rem; 
+            } 
+            
+            .welcome { 
+                font-size: 1.2rem; 
+            } 
+            
+            .earnings-amount { 
+                font-size: 2rem; 
+            } 
+            
+            .benefit { 
+                min-width: 150px; 
+            } 
+            
+            .mentor-step { 
+                flex-direction: column; 
+                text-align: center; 
+            } 
+            
+            .mentor-step-number { 
+                margin-right: 0; 
+                margin-bottom: 15px; 
+            } 
+
             body { 
                 background-size: 200% 200%; 
             } 
@@ -986,7 +1281,32 @@ src="https://www.facebook.com/tr?id=1604671177641471&ev=PageView&noscript=1"
                 height: 35px; 
                 font-size: 1rem; 
             } 
+            
+            .mentor-section { 
+                padding: 25px 15px; 
+            } 
+            
+            .greeting { 
+                font-size: 1.3rem; 
+            } 
+            
+            .welcome { 
+                font-size: 1.1rem; 
+            } 
+            
+            .earnings-amount { 
+                font-size: 1.8rem; 
+            } 
+            
+            .benefit-icon { 
+                font-size: 2.5rem; 
+            } 
+            
+            .benefit-text { 
+                font-size: 1rem; 
+            } 
         } 
+  
     </style> 
 </head> 
 <body> 
@@ -1109,6 +1429,79 @@ src="https://www.facebook.com/tr?id=1604671177641471&ev=PageView&noscript=1"
         <h2 class="section-title">Why Choose Walkwill Tech?</h2> 
         <p class="section-subtitle">Turn every step into real earnings - walking, working, or even dancing!</p> 
         
+        <!-- 新增：健康导师部分 --> 
+        <div class="mentor-section"> 
+            <div class="mentor-header"> 
+                <div class="greeting">Hey there! I'm your Health Mentor, and I'm so glad to meet you! <span class="emoji">😊</span></div> 
+                <div class="welcome">Welcome to the Walkwill Tech Online Recruitment Center</div> 
+            </div> 
+            
+            <div class="mentor-content"> 
+                <p>Did you see our <span class="mentor-highlight">"Earn by Walking"</span> ad and wonder how to get started?</p> 
+                <p>Many of our users already earn between <span class="mentor-highlight">KES 1000 to KES 10,000</span> in daily pocket money just by walking during their commute, daily strolls, or regular steps.</p> 
+                <p>It's <span class="mentor-highlight">simple, healthy, and rewarding!</span></p> 
+            </div> 
+            
+            <div class="earnings-title">Earn Daily Income Through Your Phone</div> 
+            
+            <div class="earnings-box"> 
+                <div>Potential Daily Earnings</div> 
+                <div class="earnings-amount">KES 1,000 – KES 10,000</div> 
+                <div class="earnings-note">Convert your daily walking steps into income</div> 
+            </div> 
+            
+            <div class="benefits"> 
+                <div class="benefit"> 
+                    <div class="benefit-icon">📱</div> 
+                    <div class="benefit-text">Use Your Phone</div> 
+                </div> 
+                <div class="benefit"> 
+                    <div class="benefit-icon">🚶‍♂️</div> 
+                    <div class="benefit-text">Walk Anywhere</div> 
+                </div> 
+                <div class="benefit"> 
+                    <div class="benefit-icon">💰</div> 
+                    <div class="benefit-text">Get Paid Daily</div> 
+                </div> 
+            </div> 
+            
+            <div class="mentor-subtitle">How it works:</div> 
+            <p style="text-align: center;">Sync your phone, walk as usual, and get paid for your steps. It's that easy!</p> 
+            
+            <div class="requirements"> 
+                <div class="mentor-subtitle" style="margin-bottom: 20px;">Requirements:</div> 
+                <div class="requirement-item"> 
+                    <span class="checkmark">✓</span> 
+                    <span>Aged 30+</span> 
+                </div> 
+                <div class="requirement-item"> 
+                    <span class="checkmark">✓</span> 
+                    <span>Have a smartphone</span> 
+                </div> 
+            </div> 
+            
+            <div class="mentor-subtitle">Quick Start Process:</div> 
+            <div class="mentor-steps"> 
+                <div class="mentor-step"> 
+                    <div class="mentor-step-number">1</div> 
+                    <div class="mentor-step-content">Submit your interest below</div> 
+                </div> 
+                <div class="mentor-step"> 
+                    <div class="mentor-step-number">2</div> 
+                    <div class="mentor-step-content">Reply to our intro message to confirm</div> 
+                </div> 
+                <div class="mentor-step"> 
+                    <div class="mentor-step-number">3</div> 
+                    <div class="mentor-step-content">Receive your task guide instantly</div> 
+                </div> 
+            </div> 
+            
+            <p class="mentor-note">After you submit your interest, you'll receive a short introduction. Please reply to confirm, and our team will send you the simple job steps right away.</p> 
+            
+            <!-- 新增：加入按钮 --> 
+            <button class="mentor-button" id="mentorModalBtn">Join Now & Start Earning</button> 
+        </div> 
+        
         <div class="features"> 
             <div class="feature-card"> 
                 <div class="feature-icon"> 
@@ -1202,6 +1595,7 @@ src="https://www.facebook.com/tr?id=1604671177641471&ev=PageView&noscript=1"
         // 获取DOM元素 
         const openModalBtn = document.getElementById('openModalBtn'); 
         const joinModalBtn = document.getElementById('joinModalBtn'); 
+        const mentorModalBtn = document.getElementById('mentorModalBtn'); 
         const closeModalBtn = document.getElementById('closeModalBtn'); 
         const ageModal = document.getElementById('ageModal'); 
         const age30Btn = document.getElementById('age30Btn'); 
@@ -1251,6 +1645,11 @@ src="https://www.facebook.com/tr?id=1604671177641471&ev=PageView&noscript=1"
         }); 
         
         joinModalBtn.addEventListener('click', function(event) { 
+            event.stopPropagation(); 
+            openAgeModal(); 
+        }); 
+        
+        mentorModalBtn.addEventListener('click', function(event) { 
             event.stopPropagation(); 
             openAgeModal(); 
         }); 
